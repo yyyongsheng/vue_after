@@ -1,12 +1,10 @@
-import { HomeComponent } from "../component/home/Home.vue";
-import { LoginComponent } from "../component/login/Login.vue";
+import LoginComponent from "../component/login/Login.vue";
+import AdminComponent from "../component/admin/Admin.vue"
 
 export default {
     routes: [
-        //  首页
-        { name: "h", path: '/home', component: HomeComponent },
-
-        // 登录
+        //    后台首页
+        { name: 'A', path: '/', component: AdminComponent },
         { name: 'l', path: '/login', component: LoginComponent }
 
     ]
