@@ -28,4 +28,14 @@ main {
   text-decoration: none;
   color: white;
 }
+.el-table {
+  color: rgba(114, 42, 209, 0.863);
+  background: orange;
+}
+.el-table thead tr {
+  background: rgba(182, 123, 20, 0.288);
+}
+.el-table tr {
+  background: rgba(255, 162, 0, 0.288);
+}
 /*# sourceMappingURL=./index.css.map */

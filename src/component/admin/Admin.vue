@@ -11,7 +11,11 @@
        <app-header></app-header> 
      </el-header>
      <!-- 动态变化部分 -->
-    <el-main>动态变化部分</el-main>
+    <el-main>
+      <router-view>
+       
+      </router-view>
+    </el-main>
   </el-container>
 </el-container>
 </template>
@@ -51,8 +55,10 @@
   .el-main {
     background-color:orange;
     color: white;
-    // text-align: center;
+   
+   // text-align: center;
   }
+ 
   
 
 </style>

@@ -87,13 +87,13 @@
                     title: '商品管理',
                     children: [{
                         title: '内容管理',
-                        path: '/'
+                        path: '/goods/conten/list'
                     }, {
                         title: '类别管理',
-                        path: '/'
+                        path: '/goods/conten/add'
                     }, {
                         title: '评论管理',
-                        path: '/'
+                        path: '/goods/conten/edit'
                     }, ]
                 }, {
                     title: '订单管理',

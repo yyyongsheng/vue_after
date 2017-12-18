@@ -1,5 +1,5 @@
 <template>
-  <div class="login">
+  <div class="login" >
     <img src="../../img/2.gif" alt="" id="jiji">
     <div class="login_content">
       <section class="login_content_logo">
@@ -11,15 +11,16 @@
           label-position="top">
 
           <el-form-item label="用户名" prop="uname"  >
-            <el-input type="text" v-model="user.uname" auto-complete="off"></el-input>
+            <el-input type="text"   v-model="user.uname"  @keyup.enter.native="a($event)"  auto-complete="off"></el-input>
           </el-form-item>
-
+        
           <el-form-item label="密码" prop="upwd">
-            <el-input type="password" v-model="user.upwd" auto-complete="off"></el-input>
+        
+            <el-input type="password"  @keyup.enter.native="a($event)"  v-model="user.upwd" auto-complete="off"></el-input>
           </el-form-item>
          
           <el-form-item>
-            <el-button type="primary" @click="submitForm('ruleForm2')">提交</el-button>
+            <el-button type="primary"   @click="submitForm('ruleForm2')">提交</el-button>
             <el-button @click="resetForm('ruleForm2')">重置</el-button>
           </el-form-item>
 
@@ -60,6 +61,15 @@
       }
     },
     methods:{
+
+          a:function (e) { 
+              if(e.keyCode==13){
+                this.login();
+              }
+           },
+
+
+
 
           // 登录
           login(){
